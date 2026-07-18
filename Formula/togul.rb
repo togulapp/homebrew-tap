@@ -11,7 +11,7 @@ class Togul < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/togulapp/togul-cli/releases/download/v0.1.0/togul_0.1.0_macOS_x86_64.tar.gz"
-      sha256 "a2d0a64aa4338aa7a06e9d16b986fbc488c25415df150a733f127c9f7ae7598b"
+      sha256 "ff823214d21d33ee04c5b75b16bba38ad8a136c11c19ae2e52d077874cd8be45"
 
       define_method(:install) do
         bin.install "togul"
@@ -19,7 +19,7 @@ class Togul < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/togulapp/togul-cli/releases/download/v0.1.0/togul_0.1.0_macOS_arm64.tar.gz"
-      sha256 "081e65ea68c8128e0faeb60f07dedb0d0a7489bb29b75bfc3148320780f09558"
+      sha256 "9a5c5370f6e72e1a1a9dabd0372de289c6181c02b722dbcabb3c4f14e5cb7730"
 
       define_method(:install) do
         bin.install "togul"
@@ -30,14 +30,14 @@ class Togul < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/togulapp/togul-cli/releases/download/v0.1.0/togul_0.1.0_linux_x86_64.tar.gz"
-      sha256 "660ef661bedb8fcf73251914027cb4d3c5b237a48dbe0ba26301031dc49c05bb"
+      sha256 "b5d509e522c37da3fe0477ef6c1a138a142745e0606783a100aa8652667deed6"
       define_method(:install) do
         bin.install "togul"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/togulapp/togul-cli/releases/download/v0.1.0/togul_0.1.0_linux_arm64.tar.gz"
-      sha256 "3c658ca4b4eb28093899305c48d91f6b554a7b4215ccf5f0e7d98b593c8d9d05"
+      sha256 "a5447d7ec26d9e4eec7e68a97a1addf3e6f425ab6d1142dc8d3396e677c89e66"
       define_method(:install) do
         bin.install "togul"
       end
