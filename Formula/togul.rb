@@ -5,21 +5,21 @@
 class Togul < Formula
   desc "Official CLI for Togul feature flags and remote config"
   homepage "https://togul.io"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.0/togul_0.2.0_macOS_x86_64.tar.gz"
-      sha256 "afa8c940d3238697d6e5c28f94f8a73d417c6a9e711cac47fdfd8e3259dc674a"
+      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.1/togul_0.2.1_macOS_x86_64.tar.gz"
+      sha256 "ada87ffe0d26a919e9e08370779d69cc3dbbd5b96f82348e6267b90b6cf1b61e"
 
       define_method(:install) do
         bin.install "togul"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.0/togul_0.2.0_macOS_arm64.tar.gz"
-      sha256 "00a4f38213cdf5b656ec74ecd34eddc2004b6d5fc6c0f9e25a18c5b941b7102d"
+      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.1/togul_0.2.1_macOS_arm64.tar.gz"
+      sha256 "8ecf756fed0a0b40da599de268888d0a84e71e18bc58026d70dfff8c5c05766b"
 
       define_method(:install) do
         bin.install "togul"
@@ -29,15 +29,15 @@ class Togul < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.0/togul_0.2.0_linux_x86_64.tar.gz"
-      sha256 "7a775fc99cff244dbd9782076f63c336a2bfbfd912530a9ab90d734138cdb4a7"
+      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.1/togul_0.2.1_linux_x86_64.tar.gz"
+      sha256 "63b1b9c748b70176f3a50ccbe564bc771a959f2bbe3333a6a2e0210c1ddb9afe"
       define_method(:install) do
         bin.install "togul"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.0/togul_0.2.0_linux_arm64.tar.gz"
-      sha256 "4d9354974467dfbdffd2882f2be81477b9737d563170f7cf81def616b8bbc5d5"
+      url "https://github.com/togulapp/togul-cli/releases/download/v0.2.1/togul_0.2.1_linux_arm64.tar.gz"
+      sha256 "4bb069d11256af6594827da76879cd36df9ff49ff1ac4e2dda529f64bac3be5b"
       define_method(:install) do
         bin.install "togul"
       end
